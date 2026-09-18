@@ -1,0 +1,17 @@
+{
+  "name": "eduloop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EduLoop — Community Doubt-Solving & Micro-Learning Platform",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
